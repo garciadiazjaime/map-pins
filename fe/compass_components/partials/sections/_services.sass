@@ -1,0 +1,49 @@
+/* ****************** SERVICES ************** */
+
+#services
+	color: #fff
+	background: #333
+	h2
+		color: #fff
+		hr
+			background: #fff
+	h3
+		color: #28BCEA
+		font-size: 20px
+		margin-bottom: 30px
+		text-align: center
+	p
+		width: 90%
+		font-size: 18px
+		text-align: center
+		margin: 0 auto
+	.container
+		width: 100%
+		max-width: 100%
+	.service_icons
+		@include sprite-dimensions($general-icons, services-epf)
+		display: block
+		margin: 20px  auto 60px
+	#espacios_publicitarios
+		background: url(#{$img}services-epf.jpg) center center no-repeat
+		background-size: cover
+		.service_icons
+			background: sprite($general-icons, services-epf)
+			@include sprite($general-icons, services-epf)
+	#valla_movil
+		background: url(#{$img}services-vm.jpg) center center no-repeat
+		background-size: cover
+		.service_icons
+			background: sprite($general-icons, services-vm)
+			@include sprite($general-icons, services-vm)
+
+	#impresion_instalacion
+		background: url(#{$img}services-ins.jpg) center center no-repeat
+		background-size: cover
+		.service_icons
+			background: sprite($general-icons, services-ins)
+			@include sprite($general-icons, services-ins)
+	.service_item:first-child
+		border-right: 1px solid #28BCEA
+	.service_item:last-child
+		border-left: 1px solid #28BCEA

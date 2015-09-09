@@ -1,0 +1,85 @@
+/* ****************** HOME ************** */
+#home
+
+	&:before
+		background: $pink
+		@include border-radius(0 0 0 195px , 0 0 0 20px)
+		content: " "
+		height: 155px
+		left: 0
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 1
+
+	#mainPhrase, a
+		position: relative
+		z-index: 10
+
+	.container
+		position: static
+
+		&:before
+			background: url(#{$img}woman-banner-xs.png) right top no-repeat
+			background-size: cover
+			height: 100%
+			width: 100%
+			content: " "
+			display: block
+			left: 0
+			margin: 0
+			position: absolute
+			top: 0
+			z-index: 2
+
+#mainPhrase
+	color: white
+	font-size: 70px
+	letter-spacing: 1em
+	line-height: 1.25em
+	margin: 0
+	padding: 200px 0 160px
+	text-transform: uppercase
+
+	span:first-child
+		display: block
+
+	span:last-child
+		color: white
+
+#appointment-button
+	@extend .btn
+	background: #e7e40f
+	bottom: 10px
+	display: block
+	font-size: 17px
+	font-weight: bold
+	left: 50%
+	letter-spacing: .05em
+	margin: 0 0 0 -130px
+	padding: 15px 20px
+	position: fixed
+	text-align: center
+	text-transform: uppercase
+	width: 260px	
+	z-index: 49
+
+	span
+		display: inline-block
+		padding: 0 35px	0 0
+		position: relative
+
+		&:after
+			border-top: 5px solid transparent
+			border-bottom: 5px solid transparent
+			border-left: 5px solid black
+			content: ""
+			display: block
+			height: 0
+			position: absolute
+			right: 0
+			top: 4px
+			width: 0
+
+	&:hover, &:focus, &:active
+		background: lighten(#e7e40f, 10)

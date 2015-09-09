@@ -1,0 +1,120 @@
+/* *************** GENERAL *************** */
+@media screen and (min-width: 840px)
+	.container
+		width: 820px
+@media screen and (max-width: 839px)
+	.container
+		width: 95%
+
+@media screen and (min-width: 500px) and (max-width: 767px)
+	.col-xs-12:last-child
+		.long-wrap
+			margin: 0 auto
+
+@media screen and (max-width: 450px)
+	.boxStyle
+		padding: 155px 0 0 !important
+
+		p
+			height: auto !important
+			padding: 30px 25px !important
+		span
+			margin: 0 0 0 25px !important
+
+@media screen and (max-width: 419px)
+	.leftboxStyle, .leftPinkBox, .blueBox
+		p
+			height: auto
+			word-wrap: break-word
+
+
+/* *************** HEADER *************** */
+@media screen and (max-width: 767px)
+	header, #header
+		padding: 5px 0 40px
+
+/* -------- NAVIGATION --------- */
+
+@media screen and (max-width: 767px)
+	header, #header
+		.container
+			padding: 0
+
+	.navbar-nav
+		display: block
+		margin: 0
+		padding: 0
+
+	.navbar-toggle
+		margin-right: 55px
+		margin-top: 15px
+
+	#navbar
+		text-align: center
+
+		ul
+			margin: 0
+			width: 100%
+
+	.navbar-default
+		.navbar-collapse
+			margin-right: 0
+			padding: 0
+			position: relative
+			z-index: 10
+
+
+	header, #header, header.fixed, #header.fixed
+		.navbar-nav > li > a
+			background: white
+			color: $black
+
+			&:hover, &:focus, &:active
+				background: $pink
+				color: white
+
+		.navbar-nav
+			margin: 0
+
+	header.fixed, #header.fixed
+		#brand, .navbar-brand
+			left: 50%
+			margin-left: -(general-sprite-width(logo)/2)
+			top: 2px
+
+		.navbar-nav
+			padding-top: 0
+
+@media screen and (min-width: 768px)
+	.navbar-nav
+		li
+			margin-left: 10px
+
+@media screen and (min-width: 992px)
+	.navbar-nav
+		li
+			margin-left: 35px
+
+
+/* *************** FOOTER *************** */
+
+@media screen and (max-width: 500px)
+	#footerNavigation
+		margin: 0 0 20px
+		padding: 26px 0 28px
+
+		&:before
+			margin: 0 auto 40px
+			position: static
+
+		li
+			margin: 0 0 15px
+			width: 33%
+
+			a
+				display: block
+
+@media screen and (max-width: 380px)
+	#footerNavigation
+		li
+			width: 50%
